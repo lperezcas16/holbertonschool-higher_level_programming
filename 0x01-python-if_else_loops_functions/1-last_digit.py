@@ -5,8 +5,7 @@ last = abs(number) % 10
 str1 = "Last digit of"
 if number < 0:
     last *= -1
-
-if last < 6:
+if last < 6 and last != 0:
     print("{} {:d} is {:d} and is less than 6 and not 0"
           .format(str1, number, last))
 elif last == 0:
