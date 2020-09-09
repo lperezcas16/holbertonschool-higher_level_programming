@@ -1,13 +1,13 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- * is_palindrome -  checks if a singly linked list is a palindrome
- * @head: pointer to head of list
+ * is_palindrome - checks if the linked list is a palindrome
+ * @head: the header
+ *
  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
  */
-
 int is_palindrome(listint_t **head)
 {
 	listint_t *temp = NULL;
@@ -17,8 +17,8 @@ int is_palindrome(listint_t **head)
 	{
 		return (1);
 	}
-	temp = *head;
 
+	temp = *head;
 	for (len = 0; temp; len++)
 	{
 		buff[len] = temp->n;
