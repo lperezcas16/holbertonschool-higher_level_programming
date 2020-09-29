@@ -54,7 +54,7 @@ class Rectangle:
     def __str__(self):
         rect = ""
         if self.width == 0 or self.height == 0:
-            return rect
+            return ''
         for i in range(self.height):
             for j in range(self.width):
                 rect += str(self.print_symbol)
@@ -63,7 +63,7 @@ class Rectangle:
         return rect
 
     def __repr__(self):
-        return "Rectangle({:d}, {:d})".format(self.width, self.height)
+        return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
@@ -83,4 +83,5 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """Returns new square"""
         return cls(size, size)
