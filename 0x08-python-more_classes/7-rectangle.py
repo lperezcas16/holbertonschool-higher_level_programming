@@ -39,7 +39,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-        """Functions"""
+    """Functions"""
 
     def area(self):
         return self.__width * self.__height
@@ -57,7 +57,7 @@ class Rectangle:
             return rect
         for i in range(self.__height):
             for j in range(self.__width):
-                rect += '#'
+                rect += str(self.print_symbol)
             if (i < self.__height - 1):
                 rect += '\n'
         return rect
