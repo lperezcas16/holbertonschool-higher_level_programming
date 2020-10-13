@@ -18,4 +18,4 @@ class Student:
                 if i in self.__dict__:
                     dict[i] = self.__dict__[i]
             return dict
-        return self.__dict__
+        return self.__dict_ppo_
