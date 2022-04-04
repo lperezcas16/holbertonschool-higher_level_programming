@@ -1,6 +1,8 @@
 #!/usr/bin/node
-const args = process.argv;
+const myVar = process.argv;
 
-args.forEach((val, index) => {
-	console.log('${val}');
-});
+if (myVar[2] === undefined) {
+  console.log('No argument');
+} else {
+  console.log(myVar[2]);
+}
