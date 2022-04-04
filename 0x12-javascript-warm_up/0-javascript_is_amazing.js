@@ -1,3 +1,3 @@
 #!/usr/bin/node
-const letrero = 'Javascript is amazing';
-console.log(letrero);
+const myVar = 'Javascript is amazing';
+console.log(myVar);
