@@ -7,21 +7,23 @@ class Rectangle {
       this.height = h;
     }
   }
-  print(){
+
+  print () {
     let i = 0;
     for (i; i < this.height; i++) {
       console.log('X'.repeat(this.width));
     }
   }
-  rotate (){
+
+  rotate () {
     const cont = this.height;
-	  this.width = this.height;
-	  this.height = cont;
-    }
-  double(){
-    this.width = this.width * 2
-    this.height = this.height * 2
+    this.width = this.height;
+    this.height = cont;
   }
-    
+
+  double () {
+    this.width = this.width * 2;
+    this.height = this.height * 2;
+  }
 }
 module.exports = Rectangle;
