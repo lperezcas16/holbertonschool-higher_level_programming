@@ -1,4 +1,4 @@
-#!/osr/bin/node
+#!/usr/bin/node
 
 class Rectangle {
   constructor (w, h) {
