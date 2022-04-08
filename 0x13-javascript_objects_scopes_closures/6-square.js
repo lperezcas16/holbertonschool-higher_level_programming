@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-const oldSquare = require('./5-square.js');
-class Square extends oldSquare {
+const OldSquare = require('./5-square.js');
+class Square extends OldSquare {
   charPrint (c) {
     if (!c) {
       printSquare('X', this.width, this.height);
