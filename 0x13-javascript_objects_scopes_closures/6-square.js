@@ -3,7 +3,7 @@
 const OldSquare = require('./5-square.js');
 class Square extends OldSquare {
   charPrint (c) {
-    if (!c) {
+    if (c === undefined) {
       printSquare('X', this.width, this.height);
     } else {
       printSquare('C', this.width, this.height);
