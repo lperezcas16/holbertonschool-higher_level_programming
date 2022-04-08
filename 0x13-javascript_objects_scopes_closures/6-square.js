@@ -1,6 +1,6 @@
 #!/usr/bin/node
-
 const OldSquare = require('./5-square.js');
+
 class Square extends OldSquare {
   charPrint (c) {
     let character = 'X';
