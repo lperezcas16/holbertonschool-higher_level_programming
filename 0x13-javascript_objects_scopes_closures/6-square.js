@@ -3,12 +3,12 @@ const OldSquare = require('./5-square.js');
 
 class Square extends OldSquare {
   charPrint (c) {
-    let character = 'X';
-    if (c !== undefined) {
-      character = c;
+    if (typeof(c) === 'undefined') {
+      c = 'X';
     }
+
     for (let i = 0; i < this.height; i++) {
-      console.log(character.repeat(this.width));
+      console.log(c.repeat(this.width));
     }
   }
 }
