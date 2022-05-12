@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" lists all states from the database hbtn_0e_0_usa
+"""  lists all cities from the database hbtn_0e_4_usa
 """
 
 import MySQLdb
@@ -12,6 +12,10 @@ if __name__ == "__main__":
     username = argv[1]
     password = argv[2]
     database_name = argv[3]
+
+    query_str = "SELECT cities.id, cities.name, states.name "
+    query_str = query_str + "FROM cities, states "
+    query_str = query_str + "WHERE state_id=states.id ORDER BY cities.id ASC;"
 
     """ connection to a db """
     db = MySQLdb.connect(
@@ -26,7 +30,7 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     """ execute to execte a query """
-    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute(query_str)
 
     """ tuple wiat all rows """
     rows = cur.fetchall()
